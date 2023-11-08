@@ -9,7 +9,10 @@
 </head>
 <body>
     <div id="app">
-       <div v-for ="mail in emails">{{mail}}</div>
+        <div v-if = "emails.length === 10">
+            <div v-for ="mail in emails">{{mail}}</div>
+        </div>
+       
     </div>
     
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
